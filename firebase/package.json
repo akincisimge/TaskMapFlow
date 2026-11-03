@@ -1,0 +1,13 @@
+{
+  "name": "taskmapflow-rules-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "firebase emulators:exec --only firestore --project demo-taskmapflow 'node --test test/*.test.mjs && npm --prefix ../functions run test:integration'"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.0",
+    "firebase": "^11.0.0",
+    "firebase-tools": "^14.0.0"
+  }
+}
